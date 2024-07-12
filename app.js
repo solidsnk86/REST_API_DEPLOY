@@ -14,7 +14,7 @@ app.use(
         'http://localhost:1234',
         'http://localhost:3000',
         'http://127.0.0.1:3000',
-        'https://solidsnk86.github.io/REST_API_DEPLOY/',
+        'https://solidsnk86.github.io',
       ];
 
       if (ACCEPTED_ORIGINS.includes(origin)) {
