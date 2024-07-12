@@ -185,7 +185,7 @@
     "year": 1999,
     "director": "David Fincher",
     "duration": 139,
-    "poster": "https://static.wikia.nocookie.net/cine/images/f/f8/Fight-Club-1999.jpg/revision/latest?cb=20121017183904",
+    "poster": "https://static.wikia.nocookie.net/cine/images/f/f8/Fight-Club-1999.jpg",
     "genre": ["Drama"],
     "rate": 8.8
   },
@@ -195,7 +195,7 @@
     "year": 1995,
     "director": "David Fincher",
     "duration": 127,
-    "poster": "https://static.wikia.nocookie.net/cine/images/f/fe/7.jpg/revision/latest?cb=20121017185431",
+    "poster": "https://i.pinimg.com/originals/c7/ec/62/c7ec6285f6ba7fdbd29e3a9f3b5244f9.jpg",
     "genre": ["Crime", "Drama", "Mystery"],
     "rate": 8.6
   },
