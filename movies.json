@@ -148,5 +148,105 @@
     "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
     "genre": ["Action", "Adventure", "Fantasy"],
     "rate": 7.8
+  },
+  {
+    "id": "d1e42b3c-6587-4d2a-9b98-765fd9f2e4cf",
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://m.media-amazon.com/images/I/81sxJlzMuTL._AC_SY679_.jpg",
+    "genre": ["Crime", "Drama"],
+    "rate": 9.2
+  },
+  {
+    "id": "0b3e44e2-b8c5-4b71-b8da-568a4e6e6a45",
+    "title": "The Godfather: Part II",
+    "year": 1974,
+    "director": "Francis Ford Coppola",
+    "duration": 202,
+    "poster": "https://m.media-amazon.com/images/I/71jMBG1szBL._AC_SY679_.jpg",
+    "genre": ["Crime", "Drama"],
+    "rate": 9.0
+  },
+  {
+    "id": "9f213a6e-4e2f-4dd8-9a74-3c73332b9428",
+    "title": "Schindler's List",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "duration": 195,
+    "poster": "https://m.media-amazon.com/images/I/91wZtw0ymZL._AC_SY679_.jpg",
+    "genre": ["Biography", "Drama", "History"],
+    "rate": 9.0
+  },
+  {
+    "id": "4b2e5b1e-8439-44b2-9eb8-bac62de8285b",
+    "title": "Fight Club",
+    "year": 1999,
+    "director": "David Fincher",
+    "duration": 139,
+    "poster": "https://m.media-amazon.com/images/I/81D+KJkO9bL._AC_SY679_.jpg",
+    "genre": ["Drama"],
+    "rate": 8.8
+  },
+  {
+    "id": "3f8f4b62-2f7f-4e3f-930f-8b6345b962ad",
+    "title": "Se7en",
+    "year": 1995,
+    "director": "David Fincher",
+    "duration": 127,
+    "poster": "https://m.media-amazon.com/images/I/71K2+EeMsBL._AC_SY679_.jpg",
+    "genre": ["Crime", "Drama", "Mystery"],
+    "rate": 8.6
+  },
+  {
+    "id": "4b7f6f1c-73f8-4e4b-949e-645c8dcb5c0a",
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "director": "Jonathan Demme",
+    "duration": 118,
+    "poster": "https://m.media-amazon.com/images/I/81XcWgU6eBL._AC_SY679_.jpg",
+    "genre": ["Crime", "Drama", "Thriller"],
+    "rate": 8.6
+  },
+  {
+    "id": "0d4b8a3c-73d5-4f41-9e8c-8e77a1f8d18d",
+    "title": "The Green Mile",
+    "year": 1999,
+    "director": "Frank Darabont",
+    "duration": 189,
+    "poster": "https://m.media-amazon.com/images/I/81y6lqaXv3L._AC_SY679_.jpg",
+    "genre": ["Crime", "Drama", "Fantasy"],
+    "rate": 8.6
+  },
+  {
+    "id": "c2e3c5e7-423f-4b2d-a5ec-b2e244a9e5f6",
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "director": "Steven Spielberg",
+    "duration": 169,
+    "poster": "https://m.media-amazon.com/images/I/71rZOxjFCtL._AC_SY679_.jpg",
+    "genre": ["Drama", "War"],
+    "rate": 8.6
+  },
+  {
+    "id": "e6e8d4f2-0e5e-4b72-b51f-47b3a8debf3d",
+    "title": "Spirited Away",
+    "year": 2001,
+    "director": "Hayao Miyazaki",
+    "duration": 125,
+    "poster": "https://m.media-amazon.com/images/I/81mtDLql+XL._AC_SY679_.jpg",
+    "genre": ["Animation", "Adventure", "Family"],
+    "rate": 8.6
+  },
+  {
+    "id": "4c3b5e2e-36b8-4e3d-b89d-35c8b8e9c9e4",
+    "title": "Parasite",
+    "year": 2019,
+    "director": "Bong Joon Ho",
+    "duration": 132,
+    "poster": "https://m.media-amazon.com/images/I/71rNj+JHqQL._AC_SY679_.jpg",
+    "genre": ["Comedy", "Drama", "Thriller"],
+    "rate": 8.6
   }
 ]
