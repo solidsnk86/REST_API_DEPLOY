@@ -2,7 +2,7 @@ const express = require('express');
 const movies = require('./movies.json');
 const crypto = require('node:crypto');
 const cors = require('cors');
-const { validateMOvies, validatePartialMovies } = require('./schemas/movies');
+const { validateMovies, validatePartialMovies } = require('./schemas/movies');
 
 const app = express();
 app.use(express.json()); // Middleware
@@ -49,7 +49,7 @@ app.get('/movies/:id', (req, res) => {
 });
 
 app.post('/movies', (req, res) => {
-  const result = validateMOvies(req.body);
+  const result = validateMovies(req.body);
 
   if (result.error) {
     // Podría usarse el 422
