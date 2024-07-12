@@ -25,7 +25,9 @@ Content-Type: application/json
 }
 
 ### Actualizar una película
-PATCH http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+PATCH http://localhost:3000/movies
 Content-Type: application/json
 
-{}
+{ 
+  "poster": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/02/caballeros-zodiaco-como-acabo-anime-original-saint-seiya.jpg?tf=3840x"
+}

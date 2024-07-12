@@ -1,67 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>API Rest</title>
-    <style>
-      article {
-        border: 1px solid #ccc;
-        padding: 1rem;
-        margin-bottom: 1rem;
-      }
-      img {
-        height: auto;
-        width: 320px;
-        max-width: 100%;
-      }
-    </style>
-    <script type="module">
-      console.log(location.href);
-      await fetch('', {
-        mode: 'cors',
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-        .then((res) => res.json())
-        .then((movies) => {
-          const html = movies
-            .map((movie) => {
-              return `
-                <article data-id="${movie.id}">
-                    <h2>${movie.title}</h2>
-                    <img src="${movie.poster}" alt="${movie.title}" />
-                    <p>Año: ${movie.year}</p>
-                    <p>Director: ${movie.director}</p>
-                    <p>Género: ${movie.genre}</p>
-
-                    <button>Eliminar</button>
-                </article>
-                `;
-            })
-            .join('');
-
-          document.querySelector('main').innerHTML = html;
-
-          document.addEventListener('click', (e) => {
-            if (e.target.matches('button')) {
-              const article = e.target.closest('article');
-              const id = article.dataset.id;
-
-              fetch(`http://localhost:3000/movies/${id}`, {
-                method: 'DELETE',
-              }).then((res) => {
-                if (res.ok) {
-                  article.remove();
-                }
-              });
-            }
-          });
-        });
-    </script>
+    <script type="module" src="./src/main.js"></script>
   </head>
   <body>
+    <div>
+      <header>
+        <h3>Create Movie</h3>
+        <form id="create-movie-form">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+    
+          <label for="poster">Poster URL:</label>
+          <input type="url" id="poster" name="poster" required>
+    
+          <label for="director">Director:</label>
+          <input type="text" id="director" name="director" required>
+    
+          <label for="year">Year:</label>
+          <input type="number" id="year" name="year" required>
+    
+          <label for="duration">Duration (in minutes):</label>
+          <input type="number" id="duration" name="duration" required>
+    
+          <label for="genre">Genre:</label>
+          <input type="text" id="genre" name="genre" required>
+    
+          <label for="rate">Rate:</label>
+          <input type="number" step="0.1" id="rate" name="rate" required>
+    
+          <button type="submit" class="create-btn">Create Movie</button>
+        </form>
+      </header>
+    </div>
     <main></main>
   </body>
 </html>
