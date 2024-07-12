@@ -16,7 +16,14 @@
       }
     </style>
     <script type="module">
-      fetch('http://localhost:3000/movies')
+      console.log(location.href);
+      await fetch('', {
+        mode: 'cors',
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
         .then((res) => res.json())
         .then((movies) => {
           const html = movies
@@ -31,27 +38,27 @@
 
                     <button>Eliminar</button>
                 </article>
-                `
+                `;
             })
-            .join('')
+            .join('');
 
-          document.querySelector('main').innerHTML = html
+          document.querySelector('main').innerHTML = html;
 
           document.addEventListener('click', (e) => {
             if (e.target.matches('button')) {
-              const article = e.target.closest('article')
-              const id = article.dataset.id
+              const article = e.target.closest('article');
+              const id = article.dataset.id;
 
               fetch(`http://localhost:3000/movies/${id}`, {
-                method: 'DELETE'
+                method: 'DELETE',
               }).then((res) => {
                 if (res.ok) {
-                  article.remove()
+                  article.remove();
                 }
-              })
+              });
             }
-          })
-        })
+          });
+        });
     </script>
   </head>
   <body>
