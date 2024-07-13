@@ -33,10 +33,11 @@ function movieRateColor(rate) {
   } else if (rate >= 8.0) {
     return 'yellow';
   } else if (rate >= 7.0) {
-    return 'orange';
+    return 'goldenrod';
   } else if (rate <= 5.0) {
     return 'red';
   }
+  return 'orange';
 }
 
 async function populateMovies(movies) {
