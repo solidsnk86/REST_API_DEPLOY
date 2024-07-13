@@ -115,3 +115,8 @@ article button {
 article button:hover {
   background-color: #ff4569;
 }
+
+footer {
+  color: #eaeaea;
+  text-align: center;
+}
