@@ -137,6 +137,13 @@ async function handleCreateMovie(event) {
       console.error('Error creating movie:', response);
     }
   });
+  titleInput.value = '';
+  yearInput.value = '';
+  directorInput.value = '';
+  durationInput.value = '';
+  posterInput.value = '';
+  genreInput.value = '';
+  rateInput.value = '';
 }
 
 class Movies {
