@@ -135,3 +135,9 @@ footer {
   color: #eaeaea;
   text-align: center;
 }
+
+@media (width < 400px) {
+  .create-container {
+    width: 100%;
+  }
+}
