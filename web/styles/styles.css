@@ -136,7 +136,7 @@ footer {
   text-align: center;
 }
 
-@media (width < 400px) {
+@media (width < 700px) {
   .create-container {
     width: 100%;
   }
