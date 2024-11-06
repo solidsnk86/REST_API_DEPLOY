@@ -122,7 +122,7 @@ async function handleCreateMovie(event) {
     duration: Number(durationInput.value),
     poster: posterInput.value,
     genre: [genreInput.value],
-    rate: Number(rateInput.value),
+    rate: parseFloat(rateInput.value),
   };
 
   await fetch(api.url, {
@@ -147,7 +147,7 @@ async function handleCreateMovie(event) {
   genreInput.value = '';
   rateInput.value = '';
 
-  container.scrollTop = container.scrollHeight;
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
 
 class Movies {
