@@ -1,4 +1,5 @@
 const $ = (selector) => document.querySelector(selector);
+let container = document.querySelector('main');
 
 const ids = [
   'id',
@@ -42,7 +43,6 @@ function movieRateColor(rate) {
 }
 
 async function populateMovies(movies) {
-  const container = document.querySelector('main');
   container.innerHTML = '';
 
   movies.forEach((movie) => {
@@ -146,6 +146,8 @@ async function handleCreateMovie(event) {
   posterInput.value = '';
   genreInput.value = '';
   rateInput.value = '';
+
+  container.scrollTop = container.scrollHeight;
 }
 
 class Movies {
